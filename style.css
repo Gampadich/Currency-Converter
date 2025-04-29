@@ -1,0 +1,75 @@
+*{
+    transition: 1s;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+input, select, button{
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+button{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#toggleTheme{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+body.dark{
+    background-color: #3a3a3a;
+    color: white;
+    transition: 1s;
+}
+
+body.dark.container{
+    background-color: #989292;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    transition: 1s;
+}
+
+body.dark.input,
+body.dark select,
+body.dark button{
+    background-color: #575353;
+    color: white;
+    border: 1px solid #797979;
+    transition: 1s;
+}
+
+button:hover{
+    transform: scale(1.20);
+    transition: 1s;
+}
+
+button:active{
+    transform: scale(0.5);
+    transition: 1s;
+}
+
+button:focus{
+    outline: none;
+    box-shadow: 0 0 8px #4CAF50;
+}

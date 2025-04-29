@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="7037893.png">
+</head>
+<body>
+    <button id="toggleTheme">Toggle Theme</button>
+    <div class="container">
+        <h1>Currency Converter</h1>
+
+        <input type="number" id="amount" placeholder="Enter amount...">
+
+        <div class="selectors">
+            <select id="fromCurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="UAH">UAH</option>
+            </select>
+
+            <span>→</span>
+
+            <select id="toCurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="UAH">UAH</option>
+            </select>
+        </div>
+
+        <button id="convertBtn">Convert</button>
+
+        <p id="result">Result: </p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
